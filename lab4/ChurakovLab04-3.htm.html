@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рядки, що біжать вертикально</title>
+    <style>
+        p{
+            writing-mode: vertical-rl;
+        }
+        .image{
+            height: 50px;
+            width: 50px;
+        }
+        div{
+            columns: 5;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p>
+	<marquee behavior="alternate" direction="down" width="80" bgcolor="#8B0000" height="700">
+	<img class="image" src="banana.png" alt="image"> 
+	<font color="#000000" face="Veranda" size="4">
+	<b><i>
+	<br>
+		 Текст та рисунки у рядку коливаються
+	<br>
+	</i>
+	</b>
+	</font>            
+	</marquee>
+    </p> 
+    <p>
+	<marquee behavior="scroll" direction="up" width="80" bgcolor="#F7567C" height="700">
+	<img class="image" src="banana.png" alt="image"> 
+	<font color="#000000" face="Veranda" size="4">
+	<b><i>
+	<br>
+		Послідовність рисунків пробігає знизу до гори та з'являється знову
+	<br>
+	</i>
+	</b>
+	</font> 	
+	</marquee>
+    </p> 
+    <p>
+	<marquee behavior="slide" direction="down" width="80" bgcolor="#4B0082" height="700">
+	<img class="image" src="banana.png" alt="image"> 
+	<font color="#F5FFFA" face="Veranda" size="4">  
+	<b><i>
+	<br>
+		Послідовність рисунків пробігає згори до низу із зупинкою у границі області
+	<br>
+	</i>
+	</b>
+	</font> 	
+	</marquee>
+    </p> 
+    <p>
+    <marquee behavior="scroll" direction="down" scrolldelay="100" width="80" bgcolor="#EE82EE" height="700"> <font color="#000000" face="Veranda" size="4">
+	<b><i>
+	<br>
+		Текст із запізненням 100 мс
+	<br>
+	</i>
+	</b>
+	</font>            
+	</marquee>
+    </p> 
+    <p>
+	<marquee behavior="scroll" direction="down" scrolldelay="250" width="80" bgcolor="#BDB76B" height="700">
+	<font color="#191970" face="Veranda" size="4">
+	<b><i>
+	<br>
+		Текст із запізненням 250 мс
+	<br>
+	</i>
+	</b>
+	</font>            
+	</marquee>
+	</p> 
+	</div>
+</body>
+</html>
