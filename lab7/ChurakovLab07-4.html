@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Форма для заповнення замовлення на товар</h1>
+    <form action="">
+        <pre>
+            <font size="5">
+                Номер банківського рахунку: <input type="text" name="bank_card" value="" size="40" maxlength="60">
+                Номер телефону: <input type="text" name="phone_number" value="" size="40" maxlength="60">
+                Список товарів: <select name="list" multiple size="10">
+                                    <option value="1">Хліб</option>
+                                    <option value="2">Авокадо</option>
+                                    <option value="3">Мандарин</option>
+                                    <option value="4">Манго</option>
+                                    <option value="5">Груша</option>
+									<option value="6">Персик</option>
+									<option value="7">Яблуко</option>
+									<option value="8">Вишня</option>
+									<option value="9">Полуниця</option>
+									<option value="10">Борошно</option>
+									<option value="11">Картопля</option>
+									<option value="12">Морква</option>
+									<option value="13">Буряк</option>
+									<option value="14">Помідор</option>
+									<option value="15">Кавун</option>
+									<option value="16">Петрушка</option>
+									<option value="17">Диня</option>
+									<option value="18">Капуста</option>
+									<option value="19">Огірок</option>
+									<option value="20">Печиво</option>					 
+                                </select>
+                Коментарі: <textarea name="coment" cols="50" rows="10"></textarea>
+                Вид оплати: <input type="radio" name="oplata" value="cash">Готівка
+                            <input type="radio" name="oplata" value="card">Безготівковий
+                Додаткова інформація:<input type="checkbox" name="info1" value="yes">Залишок на рахунку
+                                     <input type="checkbox" name="info2" value="yes">Список останніх виплат
+            </font>
+        </pre>
+        <p align="center">
+            <input type="submit" name="subm" value="Надіслати">
+            <input type="reset" name="name" value="Очистити форму">
+        </p>
+    </form>
+</body>
+</html>
