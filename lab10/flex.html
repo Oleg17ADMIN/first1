@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        .wrapper{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .block{
+            border: 1px solid white;
+        }
+        .main-sidebar{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 75%;
+            gap: 3px;
+        }
+        .main{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .header{
+            width: 100%;
+            height: 37.5%;
+        }
+        .red{
+            background-color: red;
+            width: 100%;
+            height: 100%;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 62.5%;
+        }
+        .i-1{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+            gap: 3px;
+        }
+        .i-1-1{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+        }
+        .orange{
+            width: 100%;
+            height: 100%;
+            background-color: orange;
+        }
+        .purple{
+            width: 100%;
+            height: 100%;
+            background-color: purple;
+        }
+        .brown{
+            width: 100%;
+            height: 100%;
+            background-color: brown;
+        }
+        .i-2{
+            width: 50%;
+            height: 100%;
+        }
+        .cyan{
+            width: 100%;
+            height: 100%;
+            background-color: cyan;
+        }
+        .sidebar{
+            width: 20%;
+            height: 100%;
+        }
+        .black{
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+        .yellow{
+            width: 100%;
+            height: 25%;
+            background-color: yellow;
+        }
+        @media screen and (max-width: 500px){
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+            }
+            .block{
+                border: 1px solid black;
+            }
+        }
+        @media screen and (min-width: 500px) and (max-width: 750px){
+            .block{
+                border: 3px solid purple;
+            }
+            .wrapper{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+        @media screen and (min-width: 750px) and (max-width: 950px){
+            .orange{
+                width: 25%;
+            }
+            .black{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 950px) and (max-width: 1200px){
+            body{
+                background-color: black;
+            }
+            .red{
+                width: 100%;
+            }
+            .orange{
+                width: 24%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-sidebar">
+            <div class="main">
+                <div class="header">
+                    <div class="block red"></div>
+                </div>
+                <div class="content">
+                    <div class="i-1">
+                        <div class="i-1-1">
+                            <div class="block orange"></div>
+                            <div class="block purple"></div>
+                        </div>
+                        <div class="block brown"></div>
+                    </div>
+                    <div class="i-2">
+                        <div class="block cyan"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="block black"></div>
+            </div>
+        </div>
+        <div class="block yellow"></div>
+    </div>
+</body>
+</html>
